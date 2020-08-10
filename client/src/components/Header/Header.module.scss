@@ -1,0 +1,15 @@
+.container {
+    width: 100%;
+    height: 60px;
+    background-color: rgba($color: lightgrey, $alpha: 0.6);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.brand {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0 2rem;
+    color: rgba($color: #172b4d, $alpha: 0.6);
+}

@@ -1,0 +1,58 @@
+.container {
+    padding: 1rem;
+    float: left;
+    min-width: 100%;
+    overflow: auto;
+    & > section {
+        display: inline-block;
+        vertical-align: top;
+        margin: 0.875rem;
+    }
+}
+
+.new-list {
+    width: 280px;
+    background-color: #ebecf0;
+    border-radius: 6px;
+    margin: 0 1rem;
+}
+
+.add-list-btn {
+    padding: 1rem 0;
+    padding-left: 1rem;
+    cursor: pointer;
+}
+
+.add-list {
+    margin: 1rem 1.2rem;
+}
+
+.head-input {
+    width: 240px;
+    padding: 0.4rem;
+    &:focus {
+        outline-color: rgba($color: blue, $alpha: 0.6);
+    }
+}
+
+.save-btn {
+    margin: 1rem 0;
+    padding: 0.4rem 1rem;
+    background-color: #5aac44;
+    border-radius: 3px;
+    outline: none;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.close-btn {
+    margin: 0 1rem;
+    color: red;
+    outline: none;
+    border: none;
+    background: transparent;
+    font-size: 1rem;
+    font-weight: 1000;
+    cursor: pointer;
+}

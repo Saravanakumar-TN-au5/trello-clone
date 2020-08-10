@@ -1,0 +1,92 @@
+@mixin status($bg) {
+    background-color: $bg;
+    color: white;
+    padding: 0.2rem 0;
+    width: 80px;
+    text-align: center;
+    border-radius: 3px;
+    font-size: 0.75rem;
+}
+
+.container {
+    width: 260px;
+    margin: 1rem auto;
+    background-color: white;
+    border-radius: 6px;
+    position: relative;
+    cursor: pointer;
+}
+
+.head {
+    padding: 1rem 0;
+    padding-left: 1rem;
+
+    & > textarea {
+        resize: vertical;
+    }
+}
+
+.status {
+    margin: 0 0.875rem;
+    padding-top: 0.875rem;
+}
+
+.pending {
+    @include status(#172b4d);
+}
+
+.inprogress {
+    @include status(rgb(204, 204, 0));
+}
+
+.completed {
+    @include status(#5aac44);
+}
+
+.rejected {
+    @include status(red);
+}
+
+.edit-icon {
+    position: absolute;
+    right: 1rem;
+    top: 0.75rem;
+    display: none;
+}
+
+.statuses {
+    & > div {
+        width: 100px;
+        padding: 0.2rem 1.2rem;
+        display: inline-block;
+        vertical-align: top;
+        margin: 0.2rem;
+        position: relative;
+    }
+    .tick {
+        position: absolute;
+        right: 0.4rem;
+    }
+}
+
+.save-btn {
+    margin: 0 0 1rem 1rem;
+    padding: 0.4rem 1rem;
+    background-color: #5aac44;
+    border-radius: 3px;
+    outline: none;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.close-btn {
+    margin: 0 1rem;
+    color: red;
+    outline: none;
+    border: none;
+    background: transparent;
+    font-size: 1rem;
+    font-weight: 1000;
+    cursor: pointer;
+}
